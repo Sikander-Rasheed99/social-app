@@ -8,6 +8,8 @@ import LiveHelpIcon from '@mui/icons-material/LiveHelp';
 import WorkOutlineIcon from '@mui/icons-material/WorkOutline';
 import EventIcon from '@mui/icons-material/Event';
 import SchoolIcon from '@mui/icons-material/School';
+import { Users } from "../../dummyData"
+import Friendlist from "../friendlist/Friendlist";
 
 export default function Sidebar() {
   return (
@@ -15,86 +17,48 @@ export default function Sidebar() {
       <div className="sidebarWrapper">
         <ul className="sidebarList">
           <li className="sidebarListItem">
-             <RssFeedIcon className="sidebarIcon"/>
-             <span>Feed</span>
+            <RssFeedIcon className="sidebarIcon" />
+            <span>Feed</span>
           </li>
           <li className="sidebarListItem">
-             <ChatIcon className="sidebarIcon"/>
-             <span>Chats</span>
+            <ChatIcon className="sidebarIcon" />
+            <span>Chats</span>
           </li>
           <li className="sidebarListItem">
-             <PlayCircleIcon className="sidebarIcon"/>
-             <span>Video</span>
+            <PlayCircleIcon className="sidebarIcon" />
+            <span>Video</span>
           </li>
           <li className="sidebarListItem">
-             <PeopleIcon className="sidebarIcon"/>
-             <span>Group</span>
+            <PeopleIcon className="sidebarIcon" />
+            <span>Group</span>
           </li>
           <li className="sidebarListItem">
-             <TurnedInIcon className="sidebarIcon"/>
-             <span>BookMarks</span>
+            <TurnedInIcon className="sidebarIcon" />
+            <span>BookMarks</span>
           </li>
           <li className="sidebarListItem">
-             <LiveHelpIcon className="sidebarIcon"/>
-             <span>Question</span>
+            <LiveHelpIcon className="sidebarIcon" />
+            <span>Question</span>
           </li>
           <li className="sidebarListItem">
-             <WorkOutlineIcon className="sidebarIcon"/>
-             <span>Jobs</span>
+            <WorkOutlineIcon className="sidebarIcon" />
+            <span>Jobs</span>
           </li>
           <li className="sidebarListItem">
-             <EventIcon className="sidebarIcon"/>
-             <span>Events</span>
+            <EventIcon className="sidebarIcon" />
+            <span>Events</span>
           </li>
           <li className="sidebarListItem">
-             <SchoolIcon className="sidebarIcon"/>
-             <span>Cources</span>
+            <SchoolIcon className="sidebarIcon" />
+            <span>Cources</span>
           </li>
         </ul>
         <button className="sidebarButton">Show More</button>
-        <hr className="sidebarHR"/>
+        <hr className="sidebarHR" />
         <ul className="sidebarFriendList">
-          <li className="sidebarFriend">
-            <img src="/assets/images/person/noman-image.jpg" alt="Friend" className="sidebarFriendImg" />
-            <span className="sidebarFriendName">Noman</span>
-          </li>
-          <li className="sidebarFriend">
-            <img src="/assets/images/person/noman-image.jpg" alt="Friend" className="sidebarFriendImg" />
-            <span className="sidebarFriendName">Noman</span>
-          </li>
-          <li className="sidebarFriend">
-            <img src="/assets/images/person/noman-image.jpg" alt="Friend" className="sidebarFriendImg" />
-            <span className="sidebarFriendName">Noman</span>
-          </li>
-          <li className="sidebarFriend">
-            <img src="/assets/images/person/noman-image.jpg" alt="Friend" className="sidebarFriendImg" />
-            <span className="sidebarFriendName">Noman</span>
-          </li>
-          <li className="sidebarFriend">
-            <img src="/assets/images/person/noman-image.jpg" alt="Friend" className="sidebarFriendImg" />
-            <span className="sidebarFriendName">Noman</span>
-          </li>
-          <li className="sidebarFriend">
-            <img src="/assets/images/person/noman-image.jpg" alt="Friend" className="sidebarFriendImg" />
-            <span className="sidebarFriendName">Noman</span>
-          </li>
-          <li className="sidebarFriend">
-            <img src="/assets/images/person/noman-image.jpg" alt="Friend" className="sidebarFriendImg" />
-            <span className="sidebarFriendName">Noman</span>
-          </li>
-          <li className="sidebarFriend">
-            <img src="/assets/images/person/noman-image.jpg" alt="Friend" className="sidebarFriendImg" />
-            <span className="sidebarFriendName">Noman</span>
-          </li>
-          <li className="sidebarFriend">
-            <img src="/assets/images/person/noman-image.jpg" alt="Friend" className="sidebarFriendImg" />
-            <span className="sidebarFriendName">Noman</span>
-          </li>
-          <li className="sidebarFriend">
-            <img src="/assets/images/person/noman-image.jpg" alt="Friend" className="sidebarFriendImg" />
-            <span className="sidebarFriendName">Noman</span>
-          </li>
-          
+          {Users.map(u => (
+            <Friendlist key={u.id} user={u} />
+          ))}
         </ul>
 
       </div>

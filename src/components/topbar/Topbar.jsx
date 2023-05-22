@@ -12,7 +12,7 @@ export default function Topbar() {
       </div>
       <div className="topbarCenter">
         <div className="searchbar">
-          <SearchOutlinedIcon className="searchIcon"/>
+          <SearchOutlinedIcon className="searchIcon" />
           <input placeholder="Search for Friends, Post and videos" className="searchInput" />
         </div>
       </div>
