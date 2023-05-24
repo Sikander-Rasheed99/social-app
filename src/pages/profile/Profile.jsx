@@ -12,12 +12,20 @@ export default function Profile() {
                 <Sidebar />
                 <div className="profileRight">
                     <div className="profileRightTop">
-                        aaaaaaaa
+                        <div className="profileCover">
+                           <img className='profileCoverImg' src="/assets/images/post/3.jpeg" alt="Profile" />
+                           <img className='profileImg' src="/assets/images/person/sikander-imamge-2.jpeg" alt="Profile" />
+                        </div>
+
+                        <div className="profileInfo">
+                            <h4 className="profileInfoName">Sikander Rasheed</h4>
+                            <span className="profileInfoDesc">Hllww My Friend!</span>
+                        </div>
                     </div>
 
                     <div className="profileRightBottom">
                         <Feed />
-                        <Rightbar />
+                        <Rightbar profile/>
                     </div>
                 </div>
             </div>
