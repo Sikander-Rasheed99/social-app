@@ -13,8 +13,8 @@ export default function Profile() {
                 <div className="profileRight">
                     <div className="profileRightTop">
                         <div className="profileCover">
-                           <img className='profileCoverImg' src="/assets/images/post/3.jpeg" alt="Profile" />
-                           <img className='profileImg' src="/assets/images/person/sikander-imamge-2.jpeg" alt="Profile" />
+                            <img className='profileCoverImg' src="/assets/images/post/3.jpeg" alt="Profile" />
+                            <img className='profileImg' src="/assets/images/person/sikander-imamge-2.jpeg" alt="Profile" />
                         </div>
 
                         <div className="profileInfo">
@@ -25,7 +25,7 @@ export default function Profile() {
 
                     <div className="profileRightBottom">
                         <Feed />
-                        <Rightbar profile/>
+                        <Rightbar profile />
                     </div>
                 </div>
             </div>
